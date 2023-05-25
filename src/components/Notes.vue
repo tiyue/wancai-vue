@@ -2,7 +2,7 @@
   <div>
     <label class="notes">
       <span class="name">备注</span>
-      <input type="text" v-model="value"
+      <input type="text"  v-model="value"
              placeholder="在这里输入">
 
     </label>
@@ -18,7 +18,9 @@ export default  class Notes extends Vue{
   @Watch('value')
   onValueChanged(value: string){
     this.$emit('update:value',value);
+
   }
+
 }
 </script>
 
